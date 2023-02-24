@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="container col-lg-7 mt-5 p-5 shadow">
+      <h1 class="text-center">Registration Form</h1>
+      <hr />
+      <form name="RegisterForm" id="registerForm" method="POST">
+        <div class="form-group mb-3" style="padding-left: 65pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>NIC</b></label>
+              <div class="input-group-text"><i class="fas fa-id-card"></i></div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="123456789V OR 123456789000"
+              id="nic"
+              required
+            />
+          </div>
+          <p id="nicalert"></p>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 28pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Full Name</b></label>
+              <div class="input-group-text"><i class="fas fa-user"></i></div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Full Name"
+              id="fullname"
+              required
+            />
+          </div>
+          <p id="fullnamealert"></p>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 60pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>DOB</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+            </div>
+            <input
+              type="date"
+              class="form-control"
+              placeholder="mm/dd/yy"
+              id="dob"
+              required
+            />
+          </div>
+          <p id="dobalert"></p>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 25pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Birth Place</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-location"></i>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Birth Place"
+              id="bplace"
+              required
+            />
+          </div>
+          <p id="bplacealert"></p>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 13pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Father Name</b></label>
+              <div class="input-group-text"><i class="fas fa-user"></i></div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Father Name"
+              id="fatname"
+              required
+            />
+          </div>
+          <p id="fatnamealert"></p>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 6pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Mother Name</b></label>
+              <div class="input-group-text"><i class="fas fa-user"></i></div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Mother Name"
+              id="momname"
+              required
+            />
+          </div>
+          <p id="momnamealert"></p>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 43pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Gender</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-venus-mars"></i>
+              </div>
+            </div>
+            <select class="form-control" required>
+              <option selected disabled value="">Select your Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 38pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Religion</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-cross"></i>
+              </div>
+            </div>
+            <select class="form-control" required>
+              <option selected disabled value="">Select your Religion</option>
+              <option>Buddhist</option>
+              <option>Hindu</option>
+              <option>Muslim</option>
+              <option>Christian</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 20pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Nationality</b></label>
+              <div class="input-group-text"><i class="fas fa-globe"></i></div>
+            </div>
+            <select class="form-control" required>
+              <option selected disabled value="">
+                Select your Nationality
+              </option>
+              <option>Srilankan</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group mb-3" style="padding-left: 47pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>E-Mail</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="E-Mail Address"
+              id="email"
+              required
+            />
+          </div>
+          <p id="emailalert"></p>
+        </div>
+
+        <div class="form-group mb-3">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Confirm E-Mail</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="E-Mail Address"
+              id="conf-email"
+              required
+            />
+          </div>
+          <p id="conf-emailalert"></p>
+        </div>
+
+        <div class="form-group mb-3" style="padding-left: 18pt">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label class="mr-3"><b>Contact No.</b></label>
+              <div class="input-group-text">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="contact"
+              placeholder="0123456789"
+              required
+            />
+          </div>
+          <p id="contactalert"></p>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary text-white">
+            &emsp;&emsp;Submit&nbsp;<i class="fas fa-paper-plane"></i
+            >&emsp;&emsp;
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
